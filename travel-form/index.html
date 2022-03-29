@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Travel Form</title>
+</head>
+<body>
+
+    <form name="myForm">
+
+        First Name: <input type="text" name="firstName" class="entry"/>
+        <br>
+        Last Name: <input type="text" name="lastName" class="entry"/>
+        <br>
+        Age: <input type="number" name="age" class="entry"/>
+        <br>
+        Male: <input type="radio" name="gender" value="Male" class="entry"/>
+        Female: <input type="radio" name="gender" value="Female" class="entry"/>
+        <br>
+
+        Destination:
+        <select name="city">
+            <option value="Miami">Miami</option>
+            <option value="Tampa">Tampa</option>
+            <option value="Jacksonville">Jacksonville</option>
+        </select>
+        <br>
+
+        Nutritional Allergies:
+        <br>
+        <input type="checkbox" name="allergies" value="Shellfish"/>Shellfish 
+        <br>
+        <input type="checkbox" name="allergies" value="Egg"/>Egg 
+        <br>
+        <input type="checkbox" name="allergies" value="Nut"/>Nut 
+        <br>
+        <input type="checkbox" name="allergies" value="Processed"/>Processed 
+        <br><br><br>
+
+        <button>Submit</button>
+
+    </form>
+
+    <script src="main.js"></script>
+</body>
+</html>
