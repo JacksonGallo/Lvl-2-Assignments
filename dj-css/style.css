@@ -1,0 +1,74 @@
+#box1 {
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    transition: background-color 1s linear 1s, border-radius 1s linear 1s;
+}
+
+#box1:hover {
+    background-color: aquamarine;
+    border-radius: 50%;
+}
+
+#box2 {
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+    transition: border 500ms ease-in-out, box-shadow 3s ease-in-out;
+}
+
+#box2:hover {
+    border: 10px dashed black;
+    box-shadow: 5px 5px 15px 5px #57FF7B;
+}
+
+#box3 {
+    height: 150px;
+    width: 150px;
+    background-color: greenyellow;
+    transition: height 6s linear, padding 10ms linear;
+}
+
+#box3:hover {
+    height: 600px;
+    padding: 50px;
+}
+
+#box4 {
+    height: 150px;
+    width: 150px;
+    background-color: orchid;
+    transition: transform 1s linear, opacity 2s ease-in-out;
+}
+
+#box4:hover {
+    transform: rotate(238deg);
+    opacity: 50%;
+}
+
+#box5 {
+    height: 150px;
+    width: 150px;
+    background-color: peachpuff;
+    transition: transform 5s linear, background-color 1s linear;
+}
+
+#box5:hover {
+    transform: rotate(238deg) skew(-79deg, 0deg);
+    background-color: gold;
+}
+
+#box6 {
+    height: 150px;
+    width: 150px;
+    background-color: coral;
+    transition: height 500ms linear, width 500ms linear, font-size 500ms linear, text-decoration 500ms linear;
+}
+
+#box6:hover {
+    height: 300px;
+    width: 300px;
+    font-size: 80px;
+    text-decoration: line-through solid rgb(68, 68, 68);
+}
+
