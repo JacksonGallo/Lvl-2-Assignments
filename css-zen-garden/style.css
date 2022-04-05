@@ -1,0 +1,333 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr 4fr 4fr 4fr 1.5fr 1fr;
+}
+
+
+.header {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-image: url(http://wallup.net/wp-content/uploads/2016/04/06/331557-nature-forest-trees-blurred.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10%;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 3.2em;
+    font-weight: 200;
+    color: white;
+    letter-spacing: .5rem;
+}
+
+h2{
+    color: rgba(255,255,255,0.6);
+    font-weight: 200;
+    font-style: italic;
+    font-size: 1.6em;
+}
+
+h3 {
+    /* margin: 2em 0 0 0; */
+    color: #2e484c;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.8em;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1em;
+    line-height: 2;
+}
+
+
+.view-all {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-image: url(http://wallup.net/wp-content/uploads/2016/04/06/331557-nature-forest-trees-blurred.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-all button {
+    width: 250px;
+    height: 75px;
+    background-color: rgba(167, 164, 164, 0.144);
+    color: rgb(198, 196, 196);
+    border: 1px solid;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    transition: .5s linear;
+}
+
+.view-all button:hover {
+    background-color: rgba(167, 164, 164, 0.441);
+    border: 1px solid white;
+    cursor: pointer;
+    color: white;
+}
+
+.body-1 {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    padding: 10% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.body-2 {
+    background-color: #a4c9b0;
+    grid-column: 1/3;
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 10% 10%;
+}
+
+.body-3 {
+    background-color: white;
+    grid-column: 1/3;
+    grid-row: 4/5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 10% 10%;
+}
+
+.authors {
+    background-color: #d1e1d6;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10% 10%;
+}
+
+li {
+    font-size: 1.0em;
+    color: #607476;
+    list-style: none;
+    letter-spacing: .1rem;
+    margin: 30px;
+    padding: 20px 0px;
+    border-bottom: 1px solid rgba(58, 64, 59, 0.100);
+    transition: .5s linear;
+}
+
+li:hover{
+    color:rgb(42, 165, 142);
+    cursor: pointer;
+}
+
+.by {
+    color: rgba(161, 157, 157, 0.6);
+    font-weight: 200;
+    font-style: italic;
+    font-size: 1em;
+}
+
+
+
+.resources {
+    background-color: #9cc7a9;
+    grid-column: 3/4;
+    grid-row: 3/4;
+    padding: 10% 10%;
+    display: flex;
+    align-items: center;
+}
+
+.blank {
+    background-color: #d1e1d6;
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+.footer {
+    grid-column: 1/-1;
+    grid-row: 5/6;
+    background-image: url(http://wallup.net/wp-content/uploads/2016/04/06/331557-nature-forest-trees-blurred.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+    text-align: center;
+}
+
+.footer h3 {
+    font-style: italic;
+    color:rgba(210, 207, 207, 0.6)
+}
+
+.underline {
+    font-style: normal;
+    color: #d1e1d6;
+    transition: .2s linear;
+}
+
+.underline:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.links {
+    background-color: #134347;;
+    grid-column: 1/-1;
+    grid-row: 6/7;
+    background-color: #134347;
+    grid-column: 1/-1;
+    grid-row: 6/7;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+@media only screen and (max-width: 900px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1/-1;
+        grid-template-rows: .5fr .5fr 2fr 2fr 2fr .5fr .5fr 1fr .5fr;
+    }
+
+    .header {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+        background-image: url(http://wallup.net/wp-content/uploads/2016/04/06/331557-nature-forest-trees-blurred.jpg);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0% 10%;
+        flex-direction: column;
+    }
+
+    .view-all{
+        grid-column: 1/-1;
+        grid-row: 2/3;
+        background-image: url(http://wallup.net/wp-content/uploads/2016/04/06/331557-nature-forest-trees-blurred.jpg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0% 10%;
+    }
+
+    .body-1 {
+        grid-column: 1/-1;
+        grid-row: 3/4;
+        padding: 10% 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .body-2 {
+        background-color: #a4c9b0;
+        grid-column: 1/-1;
+        grid-row: 4/5;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding: 10% 10%;
+    }
+
+    .body-3 {
+        background-color: white;
+        grid-column: 1/-1;
+        grid-row: 5/6;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding: 10% 10%;
+    }
+
+    .footer {
+        grid-column: 1/-1;
+        grid-row: 6/7;
+        background-image: url(http://wallup.net/wp-content/uploads/2016/04/06/331557-nature-forest-trees-blurred.jpg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .links {
+        background-color: #134347;;
+        grid-column: 1/-1;
+        grid-row: 7/8;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .links img {
+        height: 40px;
+    }
+
+    
+
+    ul {
+        columns: 2;
+        -webkit-columns: 2;
+    }
+
+    li {
+        font-size: 1.0em;
+        color: #607476;
+        list-style: none;
+        letter-spacing: .1rem;
+        margin: 0px;
+        padding: 20px 0px;
+        border-bottom: 1px solid rgba(58, 64, 59, 0.100);
+        transition: .5s linear;
+    }
+
+    .authors {
+        background-color: #d1e1d6;
+        grid-column: 1/-1;
+        grid-row: 8/9;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .resources {
+        background-color: #9cc7a9;
+        grid-column: 1/-1;
+        grid-row: 9/10;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .blank {
+        grid-row: none;
+    }
+  }
+
+
