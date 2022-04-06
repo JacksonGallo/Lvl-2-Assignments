@@ -41,14 +41,34 @@ console.log(members)
 
 
 //people old enough to see the Matrix
-const arr = [
-    { name: "Angelina Jolie", age: 80 },
-    { name: "Eric Jones", age: 2 },
-    { name: "Paris Hilton", age: 5 },
-    { name: "Kayne West", age: 16 },
-    { name: "Bob Ziroll", age: 100 }
-]
+// const arr = [
+//     { name: "Angelina Jolie", age: 80 },
+//     { name: "Eric Jones", age: 2 },
+//     { name: "Paris Hilton", age: 5 },
+//     { name: "Kayne West", age: 16 },
+//     { name: "Bob Ziroll", age: 100 }
+// ]
 
-const oldEnough = arr.filter(person => person.age >= 18)
+// const oldEnough = arr.filter(person => person.age >= 18)
 
-console.log(oldEnough)
+// console.log(oldEnough)
+
+// function points(twoPointers, threePointers) {
+//     return (twoPointers * 2) + (threePointers * 3);
+// }
+// console.log(points(1, 1))
+// console.log(points(7, 5))
+// console.log(points(38, 8))
+
+
+// function doubleChar (str){
+//     let newString = ""
+
+//     for (i=0; i<str.length; i++) {
+//         newString += str[i] + str[i]
+//     }
+
+//     return newString
+// }
+
+// console.log(doubleChar("124_"))
