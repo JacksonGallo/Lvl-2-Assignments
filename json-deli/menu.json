@@ -1,0 +1,67 @@
+{
+
+    "appetizers": [
+        {
+            "name": "potato skins",
+            "ingredients": ["potato", "cheddar cheese", "bacon"],
+            "description": "Oven baked salty snack ems to start your meal"
+        },
+        {
+            "name": "chicken wings",
+            "ingredients": ["chicken", "buffalo sauce", "ranch"],
+            "description": "Lightly battered, gently fried in avocado oil"
+        }
+    ],
+
+    "cold sandwiches": [
+        {
+            "name": "classic Italian",
+            "ingredients": ["capicola", "salami", "prosiciutto", "roasted red pepper", "pesto", "mozzorella"],
+            "description": "Just like mama made it, only better :)"
+        },
+        {
+            "name": "chicken salad",
+            "ingredients": ["mayo", "chicken", "green onions"],
+            "description": "crisp and light chicken salad, served on croissant"
+        }
+    ],
+
+    "hot sandwiches": [
+        {
+            "name": "grilled 3 cheese",
+            "ingredients": ["cheddar", "pepper jack", "montchego"],
+            "description": "speaks for itself. pro tip: order well done"
+        },
+        {
+            "name": "chorizo melt",
+            "ingredients": ["chorizo", "roasted red pepper", "montchego"],
+            "description": "spicy sausage melt"
+        }
+    ],
+
+    "desserts": [
+        {
+            "name": "ice cream sandwich",
+            "ingredients": ["cookies", "ice cream"],
+            "description": "2 ice cream scoops smothered by two warm cookies"
+        },
+        {
+            "name": "milkshake",
+            "ingredients": ["milk", "ice cream"],
+            "description": "served with your choice of white or chocolate milk"
+        }
+    ],
+
+    "drinks": [
+        {
+            "name": "coffee",
+            "ingredients": ["coffee", "cream"],
+            "description": "served hot or cold"
+        },
+        {
+            "name": "water",
+            "ingredients": ["hydrogen", "oxygen"],
+            "description": "the only drink you'll ever need"
+        }
+    ]
+}
