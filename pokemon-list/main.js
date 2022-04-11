@@ -1,23 +1,23 @@
-// const xhr = new XMLHttpRequest()
-// xhr.open("GET", "https://api.vschool.io/pokemon", true)
-// xhr.send()
+const xhr = new XMLHttpRequest()
+xhr.open("GET", "https://api.vschool.io/pokemon", true)
+xhr.send()
 
-// xhr.onreadystatechange = function() {
-//     if (xhr.readyState === 4 && xhr.status === 200) {
-//         const JSONdata = xhr.responseText
-//         const data = JSON.parse(JSONdata)
-//         console.log(data)
-//         showData(data.objects[0].pokemon)
-//     }
-// }
+xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+        const JSONdata = xhr.responseText
+        const data = JSON.parse(JSONdata)
+        console.log(data)
+        showData(data.objects[0].pokemon)
+    }
+}
 
-// function showData(arr){
-//     for(let i = 0; i < arr.length; i++){
-//         const h1 = document.createElement('h1')
-//         h1.textContent = arr[i].name
-//         document.body.appendChild(h1)
-//     }
-// } 
+function showData(arr){
+    for(let i = 0; i < arr.length; i++){
+        const h1 = document.createElement('h1')
+        h1.textContent = arr[i].name
+        document.body.appendChild(h1)
+    }
+} 
 
 
 function doubleNumbers(arr) {
@@ -26,7 +26,7 @@ function doubleNumbers(arr) {
     } )
 }
 
-// console.log(doubleNumbers([2,4,6]))
+//console.log(doubleNumbers([2,4,6]))
 
 function stringItUp(arr) {
     return arr.map(num => num.toString())
@@ -181,7 +181,7 @@ function largestToSmallest(arr) {
     return arr.sort((a,b) => b - a)
 }
 
-// console.log(largestToSmallest([1, 3, 5, 2, 90, 20]))
+//console.log(largestToSmallest([1, 3, 5, 2, 90, 20]))
 
 function shortestString(arr) {
     return arr.sort(function(a,b){
@@ -226,7 +226,7 @@ function stringConcat(arr) {
     },"")
 }
 
-// console.log(stringConcat([1,2,3]))
+//console.log(stringConcat([1,2,3]))
 
 function totalVotes(arr) {
     return arr.reduce(function(final, voter){
@@ -258,13 +258,13 @@ function shoppingSpree(arr) {
     },0)
 }
 
-console.log(shoppingSpree([
-    { title: "Tesla Model S", price: 90000 },
-    { title: "4 carat diamond ring", price: 45000 },
-    { title: "Fancy hacky Sack", price: 5 },
-    { title: "Gold fidgit spinner", price: 2000 },
-    { title: "A second Tesla Model S", price: 90000 }
-]))
+// console.log(shoppingSpree([
+//     { title: "Tesla Model S", price: 90000 },
+//     { title: "4 carat diamond ring", price: 45000 },
+//     { title: "Fancy hacky Sack", price: 5 },
+//     { title: "Gold fidgit spinner", price: 2000 },
+//     { title: "A second Tesla Model S", price: 90000 }
+// ]))
 
 function flattenArr(arr) {
     return arr.reduce(function(final, current) {
@@ -314,3 +314,66 @@ function voterResults(arr) {
 //     {name: 'Jeff', age: 30, voted: true},
 //     {name: 'Zack', age: 19, voted: false}
 // ]))
+
+
+let peopleArray = [
+    {
+        firstName: "Sarah",
+        lastName: "Palin",
+        age: 47
+    },
+    {
+        firstName: "Frank",
+        lastName: "Zappa",
+        age: 12
+    },
+    {
+        firstName: "Rick",
+        lastName: "Sanchez",
+        age: 78
+    },
+    {
+        firstName: "Morty",
+        lastName: "Smith",
+        age: 29
+    },
+    {
+        firstName: "Kyle",
+        lastName: "Mooney",
+        age: 27
+    },
+    {
+        firstName: "Pasha",
+        lastName: "Datsyuk",
+        age: 13
+    },
+    {
+        firstName: "Lev",
+        lastName: "Tolstoy",
+        age: 82
+    }
+]
+
+function sortedOfAge(arr) {
+    return arr.filter(person => person.age >= 18).sort((a,b) => a.lastName === b.lastName ? 0 : a.lastName < b.lastName ? -1 : 1).map(person =>`<li>${person.firstName} ${person.lastName} is ${person.age}</li>`)
+}
+
+// console.log(sortedOfAge(peopleArray))
+
+
+
+
+function evenishOrOddish(num) {
+        let array = num.toString().split("")
+        let sum = array.reduce(function(final,current){
+            final += parseInt(current)
+            return final
+        },0)
+        if (sum % 2 === 0) {
+            return "evenish"
+        } else {
+            return "oddish"
+        }
+}
+
+// console.log(evenishOrOddish(8))
