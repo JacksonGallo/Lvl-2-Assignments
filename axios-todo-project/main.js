@@ -37,12 +37,14 @@ function listData(data) {
 
             if (this.checked) {
                 axios.put(`https://api.vschool.io/jacksong/todo/${data[i]._id}`, {"completed": true})
-                .then(response => getData(response))
+                .then(response => console.log(response.data),
+                h1.style.textDecoration="line-through")
                 .catch(error => console.log(error))
                 
             } else {
                 axios.put(`https://api.vschool.io/jacksong/todo/${data[i]._id}`, {"completed": false})
-                .then(response => getData(response))
+                .then(response => console.log(response.data),
+                h1.style.textDecoration="none")
                 .catch(error => console.log(error))
                 }
         })    
