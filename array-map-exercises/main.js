@@ -94,29 +94,40 @@ console.log(isAllowed)
 
 //make an array of the names in h1s, and the ages in h2s
 
-const people = [
-    {
-        name: "Angelina Jolie",
-        age: 80
-    },
-    {
-        name: "Eric Jones",
-        age: 2
-    },
-    {
-        name: "Paris Hilton",
-        age: 5
-    },
-    {
-        name: "Kayne West",
-        age: 16
-    },
-    {
-        name: "Bob Ziroll",
-        age: 100
-    }
-]
+// const people = [
+//     {
+//         name: "Angelina Jolie",
+//         age: 80
+//     },
+//     {
+//         name: "Eric Jones",
+//         age: 2
+//     },
+//     {
+//         name: "Paris Hilton",
+//         age: 5
+//     },
+//     {
+//         name: "Kayne West",
+//         age: 16
+//     },
+//     {
+//         name: "Bob Ziroll",
+//         age: 100
+//     }
+// ]
 
-const readyForDOM = people.map(person => "<h1>" + person.name + "</h1><h2>" + person.age + "</h2>")
+// const readyForDOM = people.map(person => "<h1>" + person.name + "</h1><h2>" + person.age + "</h2>")
 
-console.log(readyForDOM)
+// console.log(readyForDOM)
+
+// function squareOrSquareRoot(array) {
+//     return array.map(num => Math.sqrt(num) % 1 === 0 ? Math.sqrt(num) : num*num) 
+// }
+
+
+function tuckIn (arr1, arr2) {
+    return [arr1[0],...arr2, arr1[1]]
+}
+
+console.log(tuckIn([1, 10], [2, 3, 4, 5, 6, 7, 8, 9]))
