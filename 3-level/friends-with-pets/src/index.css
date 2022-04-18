@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.friendlist--header {
+  display: flex;
+  justify-content: center;
+}
+
+.friendlist--h1 {
+  font-size: 3em;
+}
+
+.friendlist--container {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  padding-left: 30%;
+}
+
+.friend--container {
+  border: 1px solid grey;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: 5%;
+  border-radius: 8px;
+}
+
+.pet--bold{
+  font-weight: bold;
+}
