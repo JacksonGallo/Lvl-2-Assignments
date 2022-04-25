@@ -1,4 +1,5 @@
 import React from "react" 
+import axios from "axios"
 
 export default function App() {
  
@@ -29,6 +30,23 @@ function handleSubmit(event) {
   setList(prev => [formData.name, ...prev]) 
 }
 // console.log(list)
+//RANDOM COLOR PORTION
+
+const [color, setColor] = React.useState(
+  {
+    colors:[
+      {
+      "hex":""
+      } 
+    ]
+  }
+  )
+
+setColor(
+  axios.get(`https://www.colr.org/json/color/random?timestamp=${new Date().getTime()}`)
+  .then(response => setColor(response.data))
+)
+  
 
  return (
 
@@ -54,6 +72,10 @@ function handleSubmit(event) {
         {list.map(item => <li> {item} </li>)}
       </ol>
       
+      <div>
+        <h1 style={{backgroundColor:{color}}}>New Color Background here</h1>
+        <button>Change Color</button>
+      </div>
 
     </section>
 
