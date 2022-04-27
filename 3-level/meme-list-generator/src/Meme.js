@@ -49,7 +49,7 @@ export default function Meme(){
     }
 
 
-    //pushing data from 'form' into mappable array, and then putting that info into imported component
+    //pushing data from 'form' into mappable array, and then putting that info into imported component via props
     const [newMeme, setNewMeme] = React.useState([])
 
     function handleSubmit(event) {
