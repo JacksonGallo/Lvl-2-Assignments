@@ -49,7 +49,7 @@ export default function Meme(){
     }
 
 
-    //pushing data from 'form' into mappable array, and then putting that info into imported component via props
+    //pushing data from 'form'(meme) into mappable array, and then putting that info into imported component via props
     const [newMeme, setNewMeme] = React.useState([])
 
     function handleSubmit(event) {
@@ -63,12 +63,30 @@ export default function Meme(){
         ))
     }
 
+    //delete function
+    const deleteMeme = (id) => {
+        setNewMeme((prevNewMeme) => {
+            return prevNewMeme.filter((item, index) => index !== id)
+        })
+    }
+
+    //edit function
+    const editMeme = (id, updatedItem) => {
+        setNewMeme((prevNewMeme) => {
+            return prevNewMeme.map((item, index) => index === id ? updatedItem : item)
+        })
+    }
+
+    //variable that will represent component
     const createdMemeList = newMeme.map((item, index) => {
         //console.log("createdmeme")
         return(
             <CreatedMeme
                 key={index}
                 {...item}
+                id={index}
+                deleteMeme={deleteMeme}
+                editMeme={editMeme}
             />
         )
         
@@ -119,6 +137,10 @@ export default function Meme(){
                 <h2 className="preview--meme--text bottom">{meme.bottomText}</h2>
             </div>
             
+            <div className="meme--list--header">
+                <h1>Created Memes:</h1>
+            </div>
+
             {createdMemeList}
 
         </section>

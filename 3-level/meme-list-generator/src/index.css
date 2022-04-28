@@ -84,9 +84,84 @@ body {
   top: 0;
 }
 
+.meme--list--header{
+  text-align: center;
+  margin-top: 5%;
+  font-size: 2em;
+}
+
 .created--meme {
   position: relative;
   display: flex;
   justify-content: center;
   margin-top: 5%;
+}
+
+.meme-and-buttons{
+  margin-bottom: 5%;
+}
+
+.delete--button {
+  position: absolute;
+  width: 5%;
+  height: 5vh;
+  left: 45%;
+  transform: translateX(-50%);
+  margin-top: 1%;
+  background-color: #c41829;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.edit--button {
+  position: absolute;
+  width: 5%;
+  height: 5vh;
+  left: 55%;
+  transform: translateX(-50%);
+  margin-top: 1%;
+  background-color: #13d87c;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.edit--container{
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+  margin: 3%;
+}
+
+.save--button {
+  height: 5vh;
+  margin-top: 1%;
+  background-color: #13d87c;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.edit--input{
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
+}
+
+.delete--button-2{
+  height: 5vh;
+  margin-top: 1%;
+  background-color: #c41829;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
 }
